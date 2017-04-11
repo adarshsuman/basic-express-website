@@ -1,0 +1,21 @@
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+/* Navigation*/
+
+.navbar {
+    background-color: #BBDEFB;
+}
+/*Intro*/
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(54).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

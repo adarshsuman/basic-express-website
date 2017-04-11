@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Material Design Bootstrap
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css')
+    // Bootstrap core CSS
+    link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='assets/css/mdb.min.css', rel='stylesheet')
+    // Your custom styles (optional)
+    link(href='assets/css/style2.css', rel='stylesheet')
+  body
+    // Navigation & Intro
+    header
+      nav.navbar.navbar-toggleable-md.navbar-dark.mdb-color(class='#07090A')
+        .container
+          button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                a.nav-link(href='/')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='/about') About
+              li.nav-item.active
+                a.nav-link(href='/contact') Contact
+            ul.navbar-nav.nav-flex-icons
+              li.nav-item
+                a.nav-link
+                  i.fa.fa-facebook
+              li.nav-item
+                a.nav-link
+                  i.fa.fa-twitter
+              li.nav-item
+                a.nav-link
+                  i.fa.fa-instagram
+      br
+    .card
+      .card-block
+        // Header
+        .text-center
+          h3
+            i.fa.fa-lock
+            |  Login:
+          hr.mt-2.mb-2
+        // Body
+        .container
+          form(method='post', action='contact/send')
+            .md-form
+              i.fa.fa-user.prefix
+              input#form2.form-control(type='text' name='name')
+              label(for='form2') Name
+            .md-form
+              i.fa.fa-envelope.prefix
+              input#form2.form-control(type='text' name='email')
+              label(for='form2') Email
+            .md-form
+              i.fa.fa-pencil.prefix
+              textarea#form8.md-textarea(type='text' name='message')
+              label(for='form8') Message
+            .text-center
+              button.btn.btn-default(type='submit') Submit
+    // /Form without header
+    script(type='text/javascript', src='assets/js/jquery-3.1.1.min.js')
+    // Bootstrap tooltips
+    script(type='text/javascript', src='assets/js/tether.min.js')
+    // Bootstrap core JavaScript
+    script(type='text/javascript', src='assets/js/bootstrap.min.js')
+    // MDB core JavaScript
+    script(type='text/javascript', src='assets/js/mdb.min.js')
